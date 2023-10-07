@@ -11,4 +11,3 @@ class Solution:
             if x*Y!=y*X:
                 return False
         return True
-        
