@@ -1,4 +1,4 @@
-class Solution:
+class Solution(object):
     def checkStraightLine(self, coordinates):
         s=len(coordinates)
         if s<2:
