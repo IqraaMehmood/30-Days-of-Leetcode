@@ -8,8 +8,5 @@ class Solution(object):
         large=max(candies)
         result=[]
         for i in candies:
-            if i+extraCandies>=large:
-                result.append(True)
-            else:
-                result.append(False)
+            result.append(i+extraCandies>=large)
         return result
