@@ -4,7 +4,11 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        for i in range(len(nums)):
-            if(nums.count(nums[i])==1):
-                return nums[i]
+        u=set()
+        for i in nums:
+            if i in u:
+                u.remove(i)
+            else:
+                u.add(i)
+        return u.pop()
             
